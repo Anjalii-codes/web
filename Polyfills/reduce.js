@@ -1,17 +1,21 @@
 if(!Array.prototype.myreduce){
     Array.prototype.myreduce=function(userfunc,initialValue){
-        for(let i =0 ; i<this.length;i++){
-            let s=userfunc(s,this[i],i,this,initialValue=0)
+        let acc = initialValue === undefined? this[0] : initialValue
+        let curval = initialValue === undefined? 1 : 0
+        for(let i =curval ;i<this.length;i++){
+            acc=userfunc(acc,this[i],i,this)
         }
-        return s
+        return acc
 
 
     }
 }
 
+arr=[132,123,90,78,78]
+let m= arr.reduce((acc , i)=> acc*i)
+console.log(m);
 
+arr=[132,123,90,78,78]
+let m1= arr.myreduce((acc , i)=> acc*i)
+console.log(m1);
 
-
-arr=[1,2,3,4,4]
-let a = arr.myreduce((acc,i)=>acc+i)
-console.log(a)

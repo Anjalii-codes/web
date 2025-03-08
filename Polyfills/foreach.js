@@ -17,7 +17,7 @@ arr.forEach(s1=>{
 
 
 })
-console.log(ts)
+console.log(`ts : ${ts}`)
 arr=[1,2,3,4,5]
 let s=0
 arr.myforeach(s1=>{
@@ -25,4 +25,4 @@ arr.myforeach(s1=>{
 
 
 })
-console.log(s)
+console.log(`s : ${s}`)

@@ -3,8 +3,8 @@
 // )
 // console.log(neww)
 
-if(!Array.prototype.mymap){
-    Array.prototype.mymap=function(userfunc){
+if(!Array.prototype.mmymap){
+    Array.prototype.mmymap=function(userfunc){
         let newww=[]
 
         for(let i=0; i<this.length;i++){
@@ -19,5 +19,5 @@ arr =["anjali" , "sonu" , "mohit"]
 let neww_1= arr.map(e => e.toUpperCase())
 console.log(neww_1)
 arr =["anjali" , "sonu" , "mohit"]
-let neww_2= arr.mymap(e => e.toUpperCase())
+let neww_2= arr.mmymap(e => e.toUpperCase())
 console.log(neww_2)
