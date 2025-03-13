@@ -19,10 +19,11 @@ let ob={
     
 }
 let b=fulln.mybind(ob,"rkl","odisha")
+
 b()
 let ob2={
     fname:"Anjali2",
-    sname:"Prasad2",
+    sname:"Prasad21",
 }
 let b1=fulln.mybind(ob2,"rkl","odisha")
 b1()
