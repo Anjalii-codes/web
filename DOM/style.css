@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color: brown;
+}
+.buttonbox{
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+#Targetbutton{
+
+    padding: 10px;
+
+
+}
